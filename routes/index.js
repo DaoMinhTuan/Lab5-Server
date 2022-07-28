@@ -20,7 +20,7 @@ router.post('/upload', upload.array("file",10),
     var contentname = req.body.content;
     var filename = req.files.length;
         console.log(filename);
-        res.send('Upload file thanh cong '+filename+' anh '+titlename+''+contentname);
+        res.send('Upload file thanh cong '+filename+'-Title: '+titlgename+'-Content:'+contentname);
     })
 
 
